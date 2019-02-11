@@ -6,15 +6,23 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>Hello</div>
+    <div><h1>Hello</h1></div>
     <script>
-       
+        var input1 = prompt("How high should I count upto??");
         var sum = 0;
-        for (var i = 0; i < 10; i++)
+        for (var i = 0; i < input1; i++)
         {
+            document.write("<p> Point A : i is "+ i);
+            document.write("<p> Point A : sum is "+sum);
+
             sum += i;
+
+            document.write("<p> Point B : sum is "+sum);
+
         }
+        document.write("<p> Point C : i is " + i);
         document.write(sum);
+       
     </script>
 </body>
 </html>
